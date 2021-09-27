@@ -1,3 +1,7 @@
+#pow-wow summary: we shared code and discussed how to combine/improve the code.
+#Disconcerns:none
+#Questions: none
+#Comments: helped me get familiar with Python again
 import random
 
 list1 = ["Rayat", "William", "Michelle", "Lucas", "Ivan"];
