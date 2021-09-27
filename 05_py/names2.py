@@ -1,6 +1,6 @@
 #pow-wow summary: we shared code and discussed how to combine/improve the code.
-#Discoveries:none
-#Questions: none
+#Discoveries: how to call a particular item in a dictionary; defining functions; using random; combining code from different trios
+#Questions: was it intentional that we should use single quotes instead of double quotes (and if so, why)?
 #Comments: helped me get familiar with Python again
 import random
 
