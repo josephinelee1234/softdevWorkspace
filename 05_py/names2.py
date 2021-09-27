@@ -11,7 +11,7 @@ students={
        'Owen Yaggy', 'Renggeng Zheng', 'Shriya Anand', 'Shyne Choi','Sadid Ethun', 'Tomas Acuna','Theo Fahey',
        'Tina Nguyen', 'Tami Takada', 'William Chen', 'Yusuf Elsharawy', 'Zhaoyu Lin'],
 'list2': ['Alif Abdullah', 'Andrew Juang', 'Andy Lin', 'Austin Ngan', 'Annabel Zhang', 'Daniel Sooknanan',
-       'Eric Guo', 'Eliza Knapp', 'Hebe Huang', 'Han Zhang', 'Yoonah Chang', 'Josephine Lee', 'Jonathan Wu',
+       'Eric Guo', 'Eliza Knapp', 'Hebe Huang', 'Han Zhang', 'Yoonah Chang', 'Joshua Kloepfer', 'Josephine Lee', 'Jonathan Wu',
        'Jesse Xie', 'Justin Zou', 'Kevin Cao', 'Liesel Wong', 'Michael Borczuk', 'Mark Zhu', 'Noakai Aronesty',
        'Patrick Ging','Qina Liu', 'Rachel Xiao', 'Raymond Yeung', 'Sophie Liu', 'Shadman Rakib','Thomas Yu',
        'Wenhao Dong', 'Yaying Liang Li', 'Yuqing Wu'],
