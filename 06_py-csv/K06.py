@@ -1,3 +1,7 @@
+# Josephine Lee, Andy Lin, Yaying Liang
+# SoftDev
+# Team name: Hi-C
+# Approach: we made a dictionary, manually split the lines, then use rand.choices() to weight the probabilities
 import random
 
 # reading the file
