@@ -1,7 +1,18 @@
-# Josephine Lee, Andy Lin, Yaying Liang
-# SoftDev
-# Team name: Hi-C
-# Approach: we made a dictionary, manually split the lines, then use rand.choices() to weight the probabilities
+#Team Name: Hi-C; Yaying Liang Li, Andy Lin, Josephine Lee
+#SoftDev
+#K<06> -- Reading CSV Files
+#2021-09-28
+
+#Our program starts by reading the file and removing the new lines off each occupation in the CSV file.
+#Because some of the jobs have commas (outside of separating the job and the percentage), we decided to
+#manually split the lines. For every line in the file, go through every char in the line, and if we
+#see a comma and it's not part of the quoted info, add that value to the temporary storing list.
+#if we see a comma and it is within the quotes, don't separate - keep adding the char into our temp.
+#storing String. Add info in temp. list to our dictionary, and get weighted choices using random.choices.
+
+#for random.choices, population (list of "choices") and weights (list of the weights
+#of these choices) must be of the same list size
+
 import random
 
 # reading the file
