@@ -1,4 +1,11 @@
-Josephine Lee, Yaying Liang Li
+Josephine Lee with Ducky: Kitty, Yaying Liang Li with Ducky: N/A
 SoftDev
 K09
 
+Q0: We have seen similar syntax in Java when learning about inheritance.
+Q1: '/' usually describes the path to a particular file. '/' signifies going into a subfolder.
+Q2: _name_ will print to the terminal.
+Q3: No, this will not appear anywhere. Nothing is being printed; the function hello_world
+is simply returning it. We can use return values elsewhere, but it won't be printed automatically.
+Q4: .run() is also seen in Python and in Java. However, in Java, run() 
+would refer to a method written by the user.
