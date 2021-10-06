@@ -1,6 +1,7 @@
 #Team Name: Hi-C; Yaying Liang Li, Andy Lin, Josephine Lee
 #SoftDev
 #K06 -- Reading CSV Files
+#K10 -- Another function to retrieve job names for flask site
 #2021-09-28
 
 #Our program starts by reading the file and removing the new lines off each occupation in the CSV file.
