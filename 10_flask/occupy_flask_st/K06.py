@@ -90,5 +90,5 @@ def getOccupations():
 
     # for some reason python freaks out when I force this into the choices thing, so make keys a list to remeady this
     keys = list(occupations.keys())
-    return occupations
+    return keys
 jobDecider()
