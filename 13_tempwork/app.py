@@ -34,7 +34,7 @@ def hello_world():
 
 @app.route("/tablified_template") 
 def test_tmplt():
-    return render_template( 'tablified.html', foo="K13: Template for Success", occupations=hello_world()) 
+    return render_template( 'tablified.html', foo="K13: Template for Success", occupations=hello_world(), occupationChosen = (random.choices(list(dictionary), weights=dictionary.values()))[0]) 
 
 if __name__ == "__main__":
     app.debug = True
