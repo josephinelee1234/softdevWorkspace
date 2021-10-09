@@ -1,15 +1,16 @@
-# The Penguins- Qina Liu, Josephine Lee, Roshani Shrestha
+# The Penguins | Josephine Lee (Kitty), Qina Liu (Minx), Roshani Shrestha (Pete)
 # SoftDev
-# K13 - Template for Success
+# K13: Template for Success - Serves a templated page
 # 2021-10-08
 
 import random
-from flask import Flask
+import os
+from flask import Flask, render_template 
 app = Flask(__name__);
 
 @app.route("/")
 def hello_world():
-    file = open("occupations.csv");
+    file = open("data/occupations.csv")
     lines = file.read().split("\n");
     del lines[0]; #Remove "Job Class, Percentage" line
     split = [];
@@ -25,17 +26,16 @@ def hello_world():
     del split[len(split)-1]; # Remove "Total" as a job
     dictionary = dict(split)
     
-    html = "<h2> The Penguins- Qina Liu, Josephine Lee, Roshani Shrestha </h2><hr>";
-    
-    html += "Random Weighted Job: " + (random.choices(list(dictionary), weights=dictionary.values()))[0] + "<br><br><br>";
-    
-    html += "<table> <tr> <th> Job </th> <th> Percentage </th> </tr>";
-    for i in list(dictionary):
-        html += "<tr>";
-        html += ("<td>" + i + "&nbsp;&nbsp;&nbsp;</td>");
-        html += ("<td>" + str(dictionary[i]) + "% </td>");
-        html += "</tr>";
-        
-    return html;
+    return dictionary
 
-app.run();
+# @app.route("/")
+# def hello_world():
+#     return "No hablo queso!"
+
+@app.route("/tablified_template") 
+def test_tmplt():
+    return render_template( 'tablified.html', foo="K13: Template for Success", occupations=hello_world()) 
+
+if __name__ == "__main__":
+    app.debug = True
+    app.run()
