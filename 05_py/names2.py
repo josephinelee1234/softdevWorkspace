@@ -1,3 +1,7 @@
+#Josephine Lee, Yoonah Chang, Joshua Kloepfer
+#SoftDev
+#K05 -- Better Living Through Amalgamation 
+#2021-09-27
 #pow-wow summary: we shared code and discussed how to combine/improve the code. we figured out together how to call items in a dictionary.
 #Discoveries: how to call a particular item in a dictionary; defining functions; using random; combining code from different trios
 #Questions: was it intentional that we should use single quotes instead of double quotes (and if so, why)? was there a way to do this without importing random?

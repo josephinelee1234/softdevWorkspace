@@ -1,6 +1,7 @@
-# Clyde 'Thluffy' Sinclair
-# SoftDev
-# Oct 2021 
+#Team Name: Hi-C: Yaying Liang Li, Andy Lin, Josephine Lee
+#SoftDev
+#K11 -- Some Things Never Change
+#2021-10-06
 
 # DEMO 
 # basics of /static folder
