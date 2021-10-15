@@ -27,7 +27,7 @@ PROTIP: Insert your own in-line comments wherever they will help your future sel
 def disp_loginpage():
     print("\n\n\n")
     print("***DIAG: this Flask obj ***")
-    print(app)
+    print(app) #prints "<Flask 'app'>"
     print("***DIAG: request obj ***")
     print(request)
     print("***DIAG: request.args ***")
@@ -35,8 +35,8 @@ def disp_loginpage():
     #print("***DIAG: request.args['username']  ***")
     #print(request.args['username'])
     print("***DIAG: request.headers ***")
-    print(request.headers)
-    return render_template( 'login.html' )
+    print(request.headers) #returns local host, user-agent, and more?
+    return render_template( 'login.html' ) #renders login page on server
 
 
 @app.route("/auth") # , methods=['GET', 'POST'])
@@ -52,7 +52,7 @@ def authenticate():
     #print(request.args['username'])
     print("***DIAG: request.headers ***")
     print(request.headers)
-    return render_template('response.html',method = request.method, user = request.args)  #response to a form submission
+    return render_template('response.html',method = request.method, user = request.args['username'])  #response to a form submission #renders response page on server
 
 
     
