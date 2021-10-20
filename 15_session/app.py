@@ -45,6 +45,12 @@ def disp_loginpage():
 
 @app.route("/auth", methods=['GET', 'POST'])
 def authenticate():
+    if 'currentuser' in session: #checks if user has session
+        if session['currentuser'] == 'user': #hardcode to check if user is correct
+            return render_template('response.html', method = session['currentmethod'], user = session['currentuser'])
+        else: #returns error page is invalid username
+            return render_template('error.html', type = 'username')
+    
     print("\n\n\n")
     print("***DIAG: this Flask obj ***")
     print(app)
@@ -59,12 +65,6 @@ def authenticate():
 
     username = 'user'
     password = 'password' 
-
-    if 'currentuser' in session: #checks if user has session
-        if session['currentuser'] == 'user': #hardcode to check if user is correct
-            return render_template('response.html', method = session['currentmethod'], user = session['currentuser'])
-        else: #returns error page is invalid username
-            return render_template('error.html', type = 'username')
     
     if request.method == 'POST': #conditional for 'POST' method or 'GET' method
         user = request.form['username']
