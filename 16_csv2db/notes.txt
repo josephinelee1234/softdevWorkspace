@@ -1,0 +1,10 @@
+Team Whales: Hebe Huang, Josephine Lee, Han Zhang
+SoftDev
+K16: All About Database
+2021-10-21
+
+SQLite commands: .quit
+  .tables
+  .header on|off
+  .mode column|csv|list|html|insert|line|tabs
+  .help
