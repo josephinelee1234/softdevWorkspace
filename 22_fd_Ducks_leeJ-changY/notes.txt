@@ -1,0 +1,26 @@
+Ducks: Yoonah Chang (Yelena), Josephine Lee (Kitty)
+SoftDev
+K22 -- Foundation Framework
+2021-11-30
+time spent: 2.0 hrs
+
+Most attractive features:
+1. Simpler and fewer CSS styles
+	lightweight
+	easy to use templates that can be downloaded
+2. Sass
+	https://zurb.com/university/lessons/146
+	https://get.foundation/sites/docs-v5/using-sass.html
+3. Strong grid system
+	https://get.foundation/sites/docs-v5/components/grid.html
+	aljflsjfalsdkjaldskjaldskj
+4. Lots of customization settings
+	https://www.creativebloq.com/features/best-css-frameworks
+
+
+design it yourself approach
+immense customization settings
+strong grid system
+rapid development of code
+easy to use templates available for download
+lightweight
