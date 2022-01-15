@@ -12,7 +12,7 @@ Guide to creating an ubuntu 20.04 virtual machine ("droplet") and installing Apa
 ### Instructions: 
 
 1. Once on the projects dashboard, click "Create" and choose "Droplets" in the dropdown menu.
-2. Choose Ubuntu 20.04 (LTS), the basic plan, and a regular intel CPU with an SSD. Choose the datacenter region closest to you and "SSH keys" for authentication method.
+2. Choose Ubuntu 20.04 (LTS), the basic plan, and a regular intel CPU with an SSD. Choose the datacenter region nearest to you and "SSH keys" for authentication method.
 3. Set up SSH keys with the instructions from [this link](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
 4. Put the contents of the id_rsa.pub file and your SSH key name into the appropriate fields.
 5. Click "Create Droplet"
