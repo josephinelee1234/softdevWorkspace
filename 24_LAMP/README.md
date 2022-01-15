@@ -7,24 +7,26 @@ Guide to creating an ubuntu 20.04 virtual machine ("droplet") and installing Apa
 
 ### Prerequisites:
 
-- You will need Digital Ocean credit and an Digital Ocean account.
+- You will need Digital Ocean credit and an Digital Ocean account with a valid payment method.
 
-1. Click "Create"
-1. Step, with `inline code`, and/or...
-1. Step, with
-    ```
-    generic code block or terminal command
-    ```
-   and/or...
-    ```javascript
-    var foo = "this that JS tho";
-    ```
-   and/or...
-    ```python
-    print("this that Python tho")
-    ```
-   and/or...
-1. Step, with [hyperlink](https://xkcd.com)s...
+### Instructions: 
+
+1. Once on the projects dashboard, click "Create" and choose "Droplets" in the dropdown menu.
+2. Choose Ubuntu 20.04 (LTS), the basic plan, and a regular intel CPU with an SSD. Choose the datacenter region closest to you and "SSH keys" for authentication method.
+3. Set up SSH keys with the instructions from [this link](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
+4. Put the contents of the id_rsa.pub file and your SSH key name into the appropriate fields.
+5. Click "Create Droplet"
+6. Once the droplet is created, launch the console from the droplet dashboard on Digital Ocean.
+7. Create sudo-enabled users using the instructions from [this link](https://www.digitalocean.com/community/tutorials/how-to-create-a-new-sudo-enabled-user-on-ubuntu-18-04-quickstart)
+8. Install pip: 
+```
+apt install python3-pip
+```
+9. Install venv: 
+```
+apt install python3.8-venv
+```
+
 
 
 ### Resources
