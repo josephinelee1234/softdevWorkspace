@@ -3,15 +3,14 @@ SoftDev pd2
 K27 -- Basic functions in JavaScript
 2022-02-04
 
-DISCO
------------------------------------------------------------------
-* Ooooh, ___
-* Aaah-haa!  ____...
-=================================================================
+- to write functions in JS:
 
-QCC
------------------------------------------------------------------
-* Why...?
-* Huh?
-* Whuh now?
-=================================================================
+function <name_of_function> (<variables){
+    body;
+}
+
+- to print in JS:
+
+console.log();
+
+- JS is scheme with Java syntax.
