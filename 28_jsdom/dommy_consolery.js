@@ -30,7 +30,7 @@ var o = { 'name' : 'Thluffy',
           }
         };
 
-
+//adds to the list of elements on the HTML page
 var addItem = function(text) {
   var list = document.getElementById("thelist");
   var newitem = document.createElement("li");
@@ -38,13 +38,13 @@ var addItem = function(text) {
   list.appendChild(newitem);
 };
 
-
+//n is the index
 var removeItem = function(n) {
   var listitems = document.getElementsByTagName('li');
   listitems[n].remove();
 };
 
-
+//makes all the items red
 var red = function() {
   var items = document.getElementsByTagName("li");
   for(var i = 0; i < items.length; i++) {
@@ -64,6 +64,7 @@ var stripe = function() {
   }
 };
 
+//fact, fib, and gcd functions
 function fact (n){
     if (n == 0){
       return 1;
@@ -95,3 +96,10 @@ function min (a, b) {
     }
 }
 
+//use document.getElementById() to communicate between HTML and JS
+var fact5 = document.getElementById("fact");
+fact5.innerHTML = "5! = " + fact(10);
+var fib5 = document.getElementById("fib");
+fib5.innerHTML = "The 5th element of the Fibonacci sequence is " + fib(3);
+var gcd10 = document.getElementById("gcd");
+gcd10.innerHTML = "The GCD of 12 and 18 is " + gcd(12, 18);

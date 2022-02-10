@@ -7,3 +7,4 @@ K28: DOMfoolery
 - Ctrl-Shift-K in Firefox to reveal console
 - removeItem, addItem, etc. can change HTML elements
 - document.getElementsByTagName("li"); --> extracts information from HTML
+- document.getElementById("fact") --> display on HTML file using JS file
