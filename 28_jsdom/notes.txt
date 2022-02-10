@@ -1,0 +1,9 @@
+Team Sheeps :: Josephine Lee, Ivan Lam
+SoftDev pd2
+K28: DOMfoolery
+2022-02-09
+
+- You can replace "var" with "let"
+- Ctrl-Shift-K in Firefox to reveal console
+- removeItem, addItem, etc. can change HTML elements
+- document.getElementsByTagName("li"); --> extracts information from HTML
