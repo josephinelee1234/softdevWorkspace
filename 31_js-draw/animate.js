@@ -9,7 +9,6 @@
 
 // SKEELTON
 
-
 //access canvas and buttons via DOM
 var c = document.getElementById("playground");// GET CANVAS
 var dotButton = document.getElementById("buttonCircle");// GET DOT BUTTON
@@ -26,8 +25,8 @@ var requestID;  //init global var for use with animation frames
 
 //var clear = function(e) {
 var clear = (e) => {
-  console.log("clear invoked...")
-  ctx.clearRect(0, 0, playground.width, playground.height);
+  // console.log("clear invoked...")
+  ctx.clearRect(0, 0, c.width, c.height);
   // YOUR CODE HERE
 };
 
@@ -38,8 +37,9 @@ var growing = true;
 
 //var drawDot = function() {
 var drawDot = () => {
-  console.log("drawDot invoked...")
-  clear;
+  // console.log("drawDot invoked...")
+  clear(event);
+  ctx.beginPath();
   ctx.arc((playground.width)/2, (playground.height)/2, radius, 2 * Math.PI, false);
   ctx.fill();
   ctx.stroke();
@@ -49,6 +49,19 @@ var drawDot = () => {
   } else {
     radius -= 1;
   }
+
+  if (radius >= playground.width/2) {
+    growing = false;
+  } else if (radius === 0) {
+    growing = true;
+  }
+
+  if (requestID) {
+    window.cancelAnimationFrame(requestID);
+  }
+  
+  requestID = window.requestAnimationFrame(drawDot);
+  
   // YOUR CODE HERE
 
   /*
@@ -70,6 +83,7 @@ var drawDot = () => {
 var stopIt = () => {
   console.log("stopIt invoked...")
   console.log( requestID );
+  window.cancelAnimationFrame(requestID);
 
   // YOUR CODE HERE
   /*

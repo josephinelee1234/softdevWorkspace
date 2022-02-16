@@ -2,3 +2,14 @@ Team Sheeps :: Josephine Lee, Ivan Lam
 SoftDev pd2
 K31 -- JS animation
 2022-02-16
+
+- To make the dot continuously update, we added:
+  requestID = window.requestAnimationFrame(drawDot);
+- in drawDot, it wasn't clearing the previous circles properly. To fix this, we added:
+  ctx.beginPath();
+- In order to stop accelerating the animation when the animation button was clicked multiple times, we added:
+if (requestID) {
+    window.cancelAnimationFrame(requestID);
+  }
+- To stop the animation, we added:
+  window.cancelAnimationFrame(requestID);
