@@ -1,0 +1,16 @@
+Team MJ :: Michelle Lo, Josephine Lee
+SoftDev pd2
+K32 -- More Moving Parts
+2022-02-18f
+
+DISCO
+-----------------------------------------------------------------
+* New functions learned!
+Image(): creates new image object. [myImage = new Image(width, height)]
+IMAGE_OBJ.src: takes in the name of the file[myImage.src = 'logo_dvd.jpg']
+CANVAS_CONTEXT.drawImage(): draws element into a canvas. takes dx and dy, x and y coordinates from which the image should be drawn. (0, 0) represents the top left edge.
+Math.random(): random
+Math.floor(): rounds number to the largest integer less than or equal to the number.
+
+* Vectors...
+When object collides, their velocity is negated! (eg when object collides with the es with the canvas's right edge, its x-component of the velocity is negated, causing it to go the opposite direction.)
