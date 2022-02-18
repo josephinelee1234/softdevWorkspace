@@ -102,7 +102,6 @@ let dy = Math.floor(Math.random() * (c.height - myImage.height));
 
 
 let dvd = () => {
-  
   console.log("DVD!");
   requestID = window.cancelAnimationFrame(requestID);
   clear();
@@ -129,7 +128,12 @@ let dvd = () => {
 }
 //dvd();
 
+let dvdfunc = () => {
+  dx = Math.floor(Math.random() * (c.width - myImage.width));
+  dy = Math.floor(Math.random() * (c.height - myImage.height));
+  dvd();
 
+}
 dotButton.addEventListener("click", drawDot);
 stopButton.addEventListener("click", stopIt);
-logoButton.addEventListener("click", dvd);
+logoButton.addEventListener("click", dvdfunc);
