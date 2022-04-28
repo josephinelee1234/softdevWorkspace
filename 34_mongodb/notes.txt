@@ -1,0 +1,8 @@
+Josephine Lee
+SoftDev pd2
+K34 -- Another DB Perspective
+2022-04-27
+
+- no downloads!! :D
+- noSQL document database
+- the documents are stored in collections of documents
