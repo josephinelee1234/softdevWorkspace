@@ -1,0 +1,25 @@
+Josephine Lee
+SoftDev pd2
+K36 -- Another DB Perspective
+2022-05-02
+
+From quizzes/lessons:
+- correct JSON:
+{"name" : "Devi", "age": 19, "major": "Computer Science"}
+
+From readings:
+- JSON is a text-based format, and text parsing is very slow
+- JSON’s readable format is far from space-efficient, another database concern
+- JSON only supports a limited number of basic data types
+
+mongoimport examples used in video:
+mongodump --uri "mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies"
+
+mongoexport --uri="mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies" --collection=sales --out=sales.json
+
+mongorestore --uri "mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies"  --drop dump
+
+mongoimport --uri="mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies" --drop sales.json
+
+
+- Find command iterates through the cursor results
