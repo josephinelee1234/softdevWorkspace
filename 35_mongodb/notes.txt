@@ -1,0 +1,13 @@
+Josephine Lee
+SoftDev pd2
+K35 -- Another DB Perspective
+2022-05-02
+
+From quizzes:
+- MongoDB is a NoSQL database that uses documents to store data in an organized way.
+- Collections consist of one or many documents.
+- A field is a unique identifier for a specific datapoint.
+- Each field has a value associated with it.
+
+
+- Clusters! Explore through Data Explorer and the shell
