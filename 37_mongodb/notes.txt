@@ -1,0 +1,37 @@
+Josephine Lee
+SoftDev pd2
+K37 -- Another DB Perspective
+2022-05-07
+
+Chapter 3: Creating and Manipulating Documents
+
+From quizzes:
+
+How _id gets assigned to a document:
+-You can select a non ObjectId type value when inserting a new document, as long as that value is unique to this collection.
+-It is automatically generated as an ObjectId type value.
+
+Insert errors:
+-If a document is inserted without a provided _id value, then the _id field and value will be automatically generated for the inserted document before insertion.
+-MongoDB can store duplicate documents in the same collection, as long as their _id values are different.
+
+Insert example:
+db.pets.insert([{ "pet": "cat" }, { "pet": "dog" },
+                { "pet": "fish" }])
+
+Updating documents example:
+{ "_id": 1,
+  "pet": "cat",
+  "fur": "soft",
+  "claws": "sharp",
+  "name": "Furball" }
+
+Updating documents in shell example:
+db.pets.updateMany({ "pet": "cat" },
+                   { "$push": { "climate": "continental",
+                                "look": "adorable" } })
+
+-removing all collections in a database also removes the database
+
+How to delete a collection:
+db.<collection_name>.drop()
