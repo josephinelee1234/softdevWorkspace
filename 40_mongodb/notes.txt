@@ -1,0 +1,10 @@
+Josephine Lee
+SoftDev pd2
+K40 -- Another DB Perspective
+2022-05-10
+
+Chapter 6 (Next Steps)
+
+-Aggregation Builder in the Atlas Data Explorer
+-MongoDB Charts: helps you build visualizations of the data stored in your Atlas Cluster.
+-MongoDB Compass: MongoDB's Graphical User Interface Product
