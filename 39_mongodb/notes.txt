@@ -1,0 +1,22 @@
+Josephine Lee
+SoftDev pd2
+K39 -- Another DB Perspective
+2022-05-10
+
+Chapter 5 (Indexing and Aggregation Pipeline)
+
+find() and limit() example:
+db.zips.find().sort({ "pop": 1 }).limit(1)
+
+indexing example:
+db.routes.createIndex({ "src_airport": -1 })
+
+Data modeling: 
+a way to organize fields in a document to support your application performance and querying capabilities
+
+upsert:
+-By default upsert is set to false.
+-When upsert is set to true and the query predicate returns an empty cursor, 
+the update operation creates a new document using the directive from the query predicate and the update predicate.
+-When upsert is set to false and the query predicate returns an
+ empty cursor then there will be no updated documents as a result of this operation.
